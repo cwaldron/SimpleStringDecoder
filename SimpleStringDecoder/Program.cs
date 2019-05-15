@@ -3,11 +3,11 @@ using StringDecoderLibrary;
 
 namespace SimpleStringDecoder
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            var stringDecoder = new StringDecoder()
+            var stringDecoder = new StringDecoder
             {
                 Decoded = DecodedOutput
             };
@@ -22,10 +22,8 @@ namespace SimpleStringDecoder
                     stringDecoder.Decode(string.Empty);
                     break;
                 }
-                else
-                {
-                    stringDecoder.Decode(input);
-                }
+
+                stringDecoder.Decode(input);
             }
         }
 

@@ -61,7 +61,7 @@ namespace StringDecoderLibrary
                 // Exit if there is not enough bytes.
                 if (strlen > _buffer.Count)
                 {
-                    Decoded?.Invoke(String.Empty);
+                    Decoded?.Invoke(string.Empty);
                     return;
                 }
 
